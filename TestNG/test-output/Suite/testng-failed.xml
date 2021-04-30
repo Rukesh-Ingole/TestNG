@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="password" value="9960130505"/>
+    <parameter name="password1" value="9960130505"/>
+    <parameter name="username1" value="mayuringole"/>
+    <parameter name="url" value="http://newtours.demoaut.com/"/>
+    <parameter name="username" value="rukeshingole"/>
+    <classes>
+      <class name="com.testNG.AutomationDemo">
+        <methods>
+          <include name="entreurl"/>
+          <include name="DeleteCookies"/>
+          <include name="Screenshot"/>
+          <include name="maximizewindows"/>
+          <include name="dbconnection"/>
+          <include name="openbrowser"/>
+          <include name="getCookies"/>
+          <include name="loginuser"/>
+        </methods>
+      </class> <!-- com.testNG.AutomationDemo -->
+      <class name="com.testNG.MercuryNew">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="CaptureScreen"/>
+          <include name="maximizewindow"/>
+          <include name="loginwithvaliduser1" invocation-numbers="0"/>
+          <include name="dbconnection"/>
+          <include name="getCookies"/>
+          <include name="OpenBrowser"/>
+          <include name="EnteUrl"/>
+          <include name="DeleteCookies"/>
+          <include name="loginwithvaliduser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.testNG.MercuryNew -->
+      <class name="com.testNG.MercuryTest">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="maximizewindow"/>
+          <include name="getCookies"/>
+          <include name="OpenBrowser"/>
+          <include name="EnteUrl"/>
+          <include name="CaptureScreen"/>
+          <include name="dbconnection"/>
+          <include name="DeleteCookies"/>
+          <include name="loginwithvaliduser" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.testNG.MercuryTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
