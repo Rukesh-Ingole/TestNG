@@ -1,6 +1,13 @@
 package com.testNG;
 
-public class One {
-  System.out.println("ONE");
+import org.testng.annotations.Test;
 
+
+public class One {
+	
+	@Test
+	public void OneWay() {
+	System.out.println("One Way");
+
+}
 }
